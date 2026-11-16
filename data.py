@@ -20,15 +20,12 @@ letter_a = ""
 letter_b = ""
 letter_c = ""
 for letter in range(len(message)):
-  if message[letter] == "a" or "A":
-    a = str(nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter))
-    letter_a = a
-  if message[letter] == "b" or "B":
-    b = str(nr[1]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 1))
-    letter_b = b
-  if message[letter] == "c" or "C":
-    c = str(nr[2]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 2))
-    letter_c = c
+  a = str(nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter))
+  letter_a = a
+  b = str(nr[1]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 1))
+  letter_b = b
+  c = str(nr[2]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 2))
+  letter_c = c
   break
 list = []
 la = message.find("a")
