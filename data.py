@@ -1,7 +1,8 @@
 # Data, an encoding system by Jessica Emberly.
 # Letter Identifier | Position
+# Letter Identifier will be a number generated between x and y value.
 # Message: abc
-# Example: a, b, and c equal a letter from the their position in rule.
+# Example: a, b, and c equals a letter from the their position in rule.
 # Print: a0b1c2
 # Rule: {"a", "b", "c"}
 # Seed adds 1 to the alphabet letter position.
@@ -10,6 +11,7 @@
 
 import os
 import time
+import random
 
 os.system("clear")
 message = input("What do I encode?: ")
@@ -19,11 +21,11 @@ letter_a = ""
 letter_b = ""
 letter_c = ""
 for letter in range(len(message)):
-  a = str(nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter))
+  a = str(random.randint(-1000, 0) + nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter))
   letter_a = a
-  b = str(nr[1]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 1))
+  b = str(random.randint(0, 500) + nr[1]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 1))
   letter_b = b
-  c = str(nr[2]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 2))
+  c = str(nr[2]).replace(random.randint(501, 1000) + ",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 2))
   letter_c = c
   break
 list = []
