@@ -49,9 +49,5 @@ if lb == 2:
   list.append(letter_b)
 if lc == 2:
   list.append(letter_c)
-_time = 10
-while _time != 0:
-  print("Encoded String: " + str(list).replace(",", " ").replace("[", " ").replace("]", " ").replace("'", " ").replace(" ", "") + " [" + str(_time) + "]")
-  time.sleep(1)
-  _time -= 1
-  os.system("clear")
+os.system("clear")
+print("Encoded String: " + str(list).replace(",", " ").replace("[", " ").replace("]", " ").replace("'", " ").replace(" ", "") + " [" + str(_time) + "]")
