@@ -1,4 +1,4 @@
-# Data, a System by Jessica Emberly.
+# Data, an encoding system by Jessica Emberly.
 # Letter Identifier | Position
 # Message: abc
 # Example: a, b, and c equal a letter from the their position in rule.
