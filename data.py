@@ -49,4 +49,4 @@ if lb == 2:
 if lc == 2:
   list.append(letter_c)
 os.system("clear")
-print("Encoded String: " + str(list).replace(",", " ").replace("[", " ").replace("]", " ").replace("'", " ").replace(" ", "") + " [" + str(_time) + "]")
+print("Encoded String: " + str(list).replace(",", " ").replace("[", " ").replace("]", " ").replace("'", " ").replace(" ", ""))
