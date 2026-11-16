@@ -9,7 +9,6 @@
 # The seed is used to map the letter positions which is used in order to decode the Message.
 
 import os
-import random
 import time
 
 os.system("clear")
