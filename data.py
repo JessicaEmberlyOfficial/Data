@@ -21,7 +21,7 @@ letter_a = ""
 letter_b = ""
 letter_c = ""
 for letter in range(len(message)):
-  a = str(random.randint(-1000, 0)) + str(nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter))
+  a = str(random.randint(-500, -1)) + str(nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter))
   letter_a = a
   b = str(random.randint(0, 500)) + str(nr[1]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 1))
   letter_b = b
