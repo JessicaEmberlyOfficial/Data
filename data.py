@@ -4,10 +4,9 @@
 # Seed adds 1 to the alphabet letter position.
 # Generates a random number in range for LID.
 # Letter Identifier | Position
-# Seed: -159c098b1509a2
+# Seed: -30a1167c2679b3
 # The seed is used to map the letter positions which is used in order to decode the Message.
 import os
-import time
 import random
 
 os.system("clear")
@@ -17,11 +16,14 @@ nr = str(rule).split()
 letter_a = ""
 letter_b = ""
 letter_c = ""
-a = str(random.randint(-501, -1)) + str(nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(message.index("a"))
+index_a = int(message.index("a") + 1)
+index_b = int(message.index("b") + 1)
+index_c = int(message.index("c") + 1)
+a = str(random.randint(-501, -1)) + str(nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(index_a)
 letter_a = a
-b = str(random.randint(0, 500)) + str(nr[1]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(message.index("b"))
+b = str(random.randint(0, 500)) + str(nr[1]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(index_b)
 letter_b = b
-c = str(random.randint(501, 1001)) + str(nr[2]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(message.index("c"))
+c = str(random.randint(501, 1001)) + str(nr[2]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(index_c)
 letter_c = c
 list = []
 la = message.find("a")
