@@ -21,11 +21,11 @@ letter_a = ""
 letter_b = ""
 letter_c = ""
 for letter in range(len(message)):
-  a = str(random.randint(-1000, 0)) + str(nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter)) + str(message.index("a"))
+  a = str(random.randint(-501, -1)) + str(nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter)) + str(message.index("a"))
   letter_a = a
   b = str(random.randint(0, 500)) + str(nr[1]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 1)) + str(message.index("b"))
   letter_b = b
-  c = str(random.randint(501, 1000)) + str(nr[2]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 2)) + str(message.index("c"))
+  c = str(random.randint(501, 1001)) + str(nr[2]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(int(letter + 2)) + str(message.index("c"))
   letter_c = c
   break
 list = []
