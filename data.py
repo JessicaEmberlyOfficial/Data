@@ -8,6 +8,11 @@
 # The seed is used to map the letter positions which is used in order to decode the Message.
 import os
 import random
+import time
+
+index_a = ""
+index_b = ""
+index_c = ""
 
 os.system("clear")
 message = input("What do I encode?: ")
@@ -16,9 +21,37 @@ nr = str(rule).split()
 letter_a = ""
 letter_b = ""
 letter_c = ""
-index_a = int(message.index("a") + 1)
-index_b = int(message.index("b") + 1)
-index_c = int(message.index("c") + 1)
+if "a" in message:
+  index_a = int(message.index("a") + 1)
+else:
+  os.system("clear")
+  _time = 5
+  while _time != 0:
+    print("Please input an a-b-c variation—this is not a finished script. Exiting in [" + str(_time) + "].")
+    time.sleep(1)
+    _time -= 1
+    os.system("clear")
+  exit()
+if "b" in message:
+  index_b = int(message.index("b") + 1)
+else:
+  _time = 5
+  while _time != 0:
+    print("Please input an a-b-c variation—this is not a finished script. Exiting in [" + str(_time) + "].")
+    time.sleep(1)
+    time -= 1
+    os.system("clear")
+  exit()
+if "c" in message:
+  index_c = int(message.index("c") + 1)
+else:
+  _time = 5
+  while _time != 0:
+    print("Please input an a-b-c variation—this is not a finished script. Exiting in [" + str(_time) + "].")
+    time.sleep(1)
+    time -= 1
+    os.system("clear")
+  exit()
 a = str(random.randint(-501, -1)) + str(nr[0]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(index_a)
 letter_a = a
 b = str(random.randint(0, 500)) + str(nr[1]).replace(",", " ").replace("{", " ").replace("}", " ").replace("'", " ").replace(" ", "") + str(index_b)
